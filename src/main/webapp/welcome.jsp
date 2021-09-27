@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=BIG5"
-	pageEncoding="BIG5"%>
+    pageEncoding="BIG5"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
@@ -9,9 +9,10 @@
 </head>
 <body>
 
-	<h1>
-		<s:property value="message" />
-	</h1>
+<s:form action="testAction">
+	<s:textfield name="firstName" label="Your Name"></s:textfield>
+	<s:submit value="Submit"></s:submit>
+</s:form>
 
 </body>
 </html>

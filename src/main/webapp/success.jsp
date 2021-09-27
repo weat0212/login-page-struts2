@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+	pageEncoding="BIG5"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,9 @@
 </head>
 <body>
 
-<h1>SUCCESS PAGE</h1>
+	<h1>
+		<s:property value="message" />
+	</h1>
 
 </body>
 </html>
