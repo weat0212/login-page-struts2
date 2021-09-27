@@ -5,14 +5,26 @@
 <html>
 <head>
 <meta charset="BIG5">
-<title>Insert title here</title>
+<title>Welcome</title>
 </head>
 <body>
 
-<s:form action="testAction">
-	<s:textfield name="firstName" label="Your Name"></s:textfield>
-	<s:submit value="Submit"></s:submit>
-</s:form>
+	<h2>Welcome</h2>
+
+	<s:label value="First Name:"></s:label>
+	<s:property value="firstName"/><br>
+	
+	<s:label value="Last Name:"></s:label>
+	<s:property value="LastName"/><br>
+	
+	<s:label value="Gender:"></s:label>
+	<s:property value="gender"/><br>
+	
+	<s:label value="Age:"></s:label>
+	<s:property value="age"/><br>
+	
+	<s:label value="Email:"></s:label>
+	<s:property value="email"/><br>
 
 </body>
 </html>
