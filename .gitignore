@@ -45,5 +45,3 @@ test-output
 /.sonar/
 
 build
-
-/src/main/java
