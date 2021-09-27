@@ -43,3 +43,7 @@ test-output
 
 # Sonar
 /.sonar/
+
+build
+
+/src/main/java

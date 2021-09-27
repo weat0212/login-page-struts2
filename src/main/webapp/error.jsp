@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h1>FAIL PAGE</h1>
+<h1>ERROR PAGE</h1>
 
 </body>
 </html>
