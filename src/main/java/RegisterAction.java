@@ -44,7 +44,7 @@ public class RegisterAction extends ActionSupport {
 		this.email = email;
 	}
 	
-	@Override
+	/*@Override
 	public void validate() {
 		if(firstName.equals("")) {
 			addFieldError("firstName", "First Name is required");
@@ -63,5 +63,5 @@ public class RegisterAction extends ActionSupport {
 		if(email.equals("")) {
 			addFieldError("email", "Email is required");
 		}
-	}
+	}*/
 }
