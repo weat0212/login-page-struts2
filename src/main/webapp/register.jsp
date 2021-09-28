@@ -27,6 +27,10 @@
 		<s:select list="colors" name="selectedColor" headerKey="None"
 							headerValue="Select a Color"></s:select>
 		
+		<s:checkbox name="subscription" value="true" label="Subscribe to our newsletter"></s:checkbox>
+		
+		<s:checkboxlist list="hobbies" name="selectedHobbies" label="Hobbies"></s:checkboxlist>
+		
 		<s:reset value="Reset"></s:reset>
 		<s:submit value="Register"></s:submit>
 	</s:form>

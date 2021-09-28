@@ -13,9 +13,13 @@ public class RegisterAction extends ActionSupport {
 	private String address;
 	private String selectedColor;
 	private List<String> colors = new ArrayList<String>();
+	private Boolean subscription;
+	private List<String> hobbies = new ArrayList<String>();
+	private String selectedHobbies;
 	
 	public String initializeFormFields() {
 		initializeColors();
+		initializeHobbies();
 		return "input";
 	}
 	
@@ -26,8 +30,20 @@ public class RegisterAction extends ActionSupport {
 		colors.add("White");
 	}
 	
+	public void initializeHobbies() {
+		hobbies.add("Drawing");
+		hobbies.add("Teaching");
+		hobbies.add("Singing");
+		hobbies.add("Programming");
+	}
+	
 	public String execute() {
 		System.out.println("execute() method called");
+		if(subscription == true) {
+			System.out.println("You are a subscriber");
+		} else {
+			System.out.println("You are NOT a subscriber");			
+		}
 		return SUCCESS;
 	}
 	
@@ -84,5 +100,29 @@ public class RegisterAction extends ActionSupport {
 
 	public void setColors(List<String> colors) {
 		this.colors = colors;
+	}
+
+	public Boolean getSubscription() {
+		return subscription;
+	}
+
+	public void setSubscription(Boolean subscription) {
+		this.subscription = subscription;
+	}
+
+	public List<String> getHobbies() {
+		return hobbies;
+	}
+
+	public void setHobbies(List<String> hobbies) {
+		this.hobbies = hobbies;
+	}
+
+	public String getSelectedHobbies() {
+		return selectedHobbies;
+	}
+
+	public void setSelectedHobbies(String selectedHobbies) {
+		this.selectedHobbies = selectedHobbies;
 	}
 }

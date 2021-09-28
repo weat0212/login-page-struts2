@@ -32,5 +32,7 @@
 	<s:label value="Favorite Color:"></s:label>
 	<s:property value="selectedColor"/><br>
 
+	<s:label value="Hobbies:"></s:label>
+	<s:property value="selectedHobbies"/><br>
 </body>
 </html>
