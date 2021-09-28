@@ -34,5 +34,26 @@
 		<s:reset value="Reset"></s:reset>
 		<s:submit value="Register"></s:submit>
 	</s:form>
+	
+	<table border="1" width="300">
+		<tr>
+			<th>Product ID</th>
+			<th>Product Name</th>
+			<th>Product Price</th>
+		</tr>
+		<s:iterator value="products" var="product">
+			<tr>
+				<td>
+					<s:property value="#product.productId"/>
+				</td>
+				<td>
+					<s:property value="#product.productName"/>
+				</td>
+				<td>
+					<s:property value="#product.productPrice"/>
+				</td>
+			</tr>
+		</s:iterator>
+	</table>
 </body>
 </html>
