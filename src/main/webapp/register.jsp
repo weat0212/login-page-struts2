@@ -22,6 +22,12 @@
 		
 		<s:textfield name="email" label="Email"></s:textfield>
 		
+		<s:textarea name="address" cols="30" rows="7" label="Address"></s:textarea>
+		
+		<s:select list="colors" name="selectedColor" headerKey="None"
+							headerValue="Select a Color"></s:select>
+		
+		<s:reset value="Reset"></s:reset>
 		<s:submit value="Register"></s:submit>
 	</s:form>
 </body>

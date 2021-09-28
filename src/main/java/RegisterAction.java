@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 import com.opensymphony.xwork2.ActionSupport;
 
 public class RegisterAction extends ActionSupport {
@@ -7,6 +10,21 @@ public class RegisterAction extends ActionSupport {
 	private String gender;
 	private Integer age;
 	private String email;
+	private String address;
+	private String selectedColor;
+	private List<String> colors = new ArrayList<String>();
+	
+	public String initializeFormFields() {
+		initializeColors();
+		return "input";
+	}
+	
+	public void initializeColors() {
+		colors.add("Red");
+		colors.add("Blue");
+		colors.add("Green");
+		colors.add("White");
+	}
 	
 	public String execute() {
 		System.out.println("execute() method called");
@@ -43,25 +61,28 @@ public class RegisterAction extends ActionSupport {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	/*@Override
-	public void validate() {
-		if(firstName.equals("")) {
-			addFieldError("firstName", "First Name is required");
-		}
-		if(lastName.equals("")) {
-			addFieldError("lastName", "Last Name is required");
-		}
-		if(gender == null) {
-			addFieldError("gender", "Gender is required");
-		}
-		if(age == null) {
-			addFieldError("age", "Age is required");
-		} else if (age <= 18) {			
-			addFieldError("age", "Age should be above 18");
-		}
-		if(email.equals("")) {
-			addFieldError("email", "Email is required");
-		}
-	}*/
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getSelectedColor() {
+		return selectedColor;
+	}
+
+	public void setSelectedColor(String selectedColor) {
+		this.selectedColor = selectedColor;
+	}
+
+	public List<String> getColors() {
+		return colors;
+	}
+
+	public void setColors(List<String> colors) {
+		this.colors = colors;
+	}
 }

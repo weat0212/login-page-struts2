@@ -25,6 +25,12 @@
 	
 	<s:label value="Email:"></s:label>
 	<s:property value="email"/><br>
+	
+	<s:label value="Address:"></s:label>
+	<s:property value="address"/><br>
+	
+	<s:label value="Favorite Color:"></s:label>
+	<s:property value="selectedColor"/><br>
 
 </body>
 </html>
